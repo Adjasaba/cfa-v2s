@@ -1,45 +1,274 @@
-# Git Integration & Wix CLI <img align="left" src="https://user-images.githubusercontent.com/89579857/185785022-cab37bf5-26be-4f11-85f0-1fac63c07d3b.png">
+# 🎓 CFA v2s - Refonte du site du Centre de Formation
 
-This repo is part of Git Integration & Wix CLI, a set of tools that allows you to write, test, and publish code for your Wix site locally on your computer. 
+> Projet de refonte complète d'un site web pour un centre de formation d'apprentis, réalisé dans le cadre d'une mission professionnelle.
 
-Connect your site to GitHub, develop in your favorite IDE, test your code in real time, and publish your site from the command line.
+![Wix](https://img.shields.io/badge/Wix-0C6EFC?style=for-the-badge&logo=wix&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Velo](https://img.shields.io/badge/Velo_by_Wix-000000?style=for-the-badge&logo=wix&logoColor=white)
 
-## Set up this repository in your IDE
-This repo is connected to a Wix site. That site tracks this repo's default branch. Any code committed and pushed to that branch from your local IDE appears on the site.
+---
 
-Before getting started, make sure you have the following things installed:
-* [Git](https://git-scm.com/download)
-* [Node](https://nodejs.org/en/download/), version 14.8 or later.
-* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/getting-started/install)
-* An SSH key [added to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+## 📋 À propos du projet
 
-To set up your local environment and start coding locally, do the following:
+Ce projet consiste en la **refonte complète du site web** d'un centre de formation d'apprentis (CFA). L'objectif est de moderniser l'interface, améliorer l'expérience utilisateur et ajouter des fonctionnalités interactives pour faciliter l'accès à l'information pour les apprentis, les entreprises et les formateurs.
 
-1. Open your terminal and navigate to where you want to store the repo.
-1. Clone the repo by running `git clone <your-repository-url>`.
-1. Navigate to the repo's directory by running `cd <directory-name>`.
-1. Install the repo's dependencies by running `npm install` or `yarn install`.
-1. Install the Wix CLI by running `npm install -g @wix/cli` or `yarn global add @wix/cli`.  
-   Once you've installed the CLI globally, you can use it with any Wix site's repo.
+### 🎯 Objectifs
 
-For more information, see [Setting up Git Integration & Wix CLI](https://support.wix.com/en/article/velo-setting-up-git-integration-wix-cli-beta).
+- ✨ Moderniser le design et l'ergonomie
+- 🚀 Améliorer les performances et la navigation
+- 📱 Rendre le site 100% responsive
+- ⚡ Ajouter des fonctionnalités interactives avec Velo by Wix
+- 🎨 Optimiser l'expérience utilisateur (UX/UI)
 
-## Write Velo code in your IDE
-Once your repo is set up, you can write code in it as you would in any other non-Wix project. The repo's file structure matches the [public](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#public), [backend](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#backend), and [page code](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#page-code) sections in Editor X.
+---
 
-Learn more about [this repo's file structure](https://support.wix.com/en/article/velo-understanding-your-sites-github-repository-beta).
+## 🛠️ Technologies utilisées
 
-## Test your code with the Local Editor
-The Local Editor allows you test changes made to your site in real time. The code in your local IDE is synced with the Local Editor, so you can test your changes before committing them to your repo. You can also change the site design in the Local Editor and sync it with your IDE.
+### Plateforme
+- **Wix** - Plateforme de création de sites web
+- **Velo by Wix** - Framework pour développement avancé (JavaScript côté serveur et client)
 
-Start the Local Editor by navigating to this repo's directory in your terminal and running `wix dev`.
+### Développement
+- **Node.js** (v18+) - Environnement d'exécution JavaScript
+- **npm** - Gestionnaire de paquets
+- **Wix CLI** - Outil en ligne de commande pour le développement local
+- **Git** - Gestion de versions
 
-For more information, see [Working with the Local Editor](https://support.wix.com/en/article/velo-working-with-the-local-editor-beta).
+### Langages
+- **JavaScript (ES6+)** - Logique et interactivité
+- **HTML5/CSS3** - Structure et styles
+- **JSON** - Configuration et données
 
-## Preview and publish with the Wix CLI
-The Wix CLI is a tool that allows you to work with your site locally from your computer's terminal. You can use it to build a preview version of your site and publish it. You can also use the CLI to install [approved npm packages](https://support.wix.com/en/article/velo-working-with-npm-packages) to your site.
+---
 
-Learn more about [working with the Wix CLI](https://support.wix.com/en/article/velo-working-with-the-wix-cli-beta).
+## 🚀 Installation et configuration
 
-## Invite contributors to work with you
-Git Integration & Wix CLI extends Editor X's [concurrent editing](https://support.wix.com/en/article/editor-x-about-concurrent-editing) capabilities. Invite other developers as collaborators on your [site](https://support.wix.com/en/article/inviting-people-to-contribute-to-your-site) and your [GitHub repo](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). Multiple developers can work on a site's code at once.
+### Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé :
+- [Node.js](https://nodejs.org/) (version 18 ou supérieure)
+- [Git](https://git-scm.com/)
+- Un compte [Wix](https://www.wix.com)
+
+### Installation
+
+1. **Cloner le dépôt**
+```bash
+git clone https://github.com/Adjasaba/cfa-v2s.git
+cd cfa-v2s
+```
+
+2. **Installer les dépendances**
+```bash
+npm install
+```
+
+3. **Installer Wix CLI (si pas déjà fait)**
+```bash
+npm install -g @wix/cli
+```
+
+4. **Se connecter à Wix**
+```bash
+wix login
+```
+
+5. **Lancer l'environnement de développement local**
+```bash
+wix dev
+```
+
+Le site sera accessible sur `http://localhost:5173` (ou un autre port indiqué dans le terminal).
+
+---
+
+## 📂 Structure du projet
+
+```
+cfa-v2s/
+├── src/
+│   ├── pages/              # Code JavaScript des pages
+│   │   ├── masterPage.js   # Code global (toutes les pages)
+│   │   └── Home.js         # Page d'accueil
+│   ├── backend/            # Code backend (serveur)
+│   └── public/             # Ressources publiques
+├── .wix/                   # Configuration Wix
+├── node_modules/           # Dépendances npm
+├── package.json            # Configuration npm et dépendances
+└── README.md              # Ce fichier
+```
+
+---
+
+## ✨ Fonctionnalités développées
+
+### 🎯 Fonctionnalités principales
+
+- **Navigation améliorée** - Menu responsive et intuitif
+- **Bouton "Retour en haut"** - Animation smooth avec apparition au scroll
+- **Intégration réseaux sociaux** - Flux Instagram/Facebook en temps réel
+- **Formulaires de contact** - Avec notifications email automatiques
+- **Recherche de formations** - Système de filtrage dynamique
+- **Espace documentaire** - Accès aux ressources et documents
+
+### 🔧 Fonctionnalités techniques
+
+- Développement avec **Velo by Wix** pour des interactions avancées
+- Code JavaScript moderne (ES6+)
+- Gestion d'événements (scroll, click, hover)
+- Animations et transitions fluides
+- Responsive design (mobile, tablette, desktop)
+
+---
+
+## 💻 Développement
+
+### Lancer le serveur de développement
+
+```bash
+wix dev
+```
+
+Cette commande :
+- ✅ Synchronise les types avec l'éditeur Wix
+- ✅ Lance un serveur local
+- ✅ Active le hot-reload (rechargement automatique)
+- ✅ Ouvre le navigateur automatiquement
+
+### Commandes utiles
+
+| Commande | Description |
+|----------|-------------|
+| `wix dev` | Lancer le serveur de développement |
+| `wix build` | Compiler le projet |
+| `wix sync-types` | Synchroniser les types TypeScript |
+| `wix login` | Se connecter à Wix |
+| `npm install` | Installer les dépendances |
+
+### Workflow de développement
+
+1. **Modifier le code** dans VS Code (ou votre éditeur préféré)
+2. **Sauvegarder** (Ctrl+S)
+3. **Le navigateur se rafraîchit automatiquement** ✨
+4. **Tester** les modifications en temps réel
+5. **Commiter** les changements avec Git
+
+---
+
+## 🎨 Personnalisation
+
+### Modifier les styles
+
+Les styles sont gérés via l'éditeur Wix et peuvent être surchargés avec du CSS personnalisé dans les paramètres du site.
+
+### Ajouter des fonctionnalités
+
+Pour ajouter de nouvelles fonctionnalités JavaScript :
+
+1. Ouvrir le fichier de page correspondant dans `src/pages/`
+2. Ajouter votre code dans la fonction `$w.onReady()`
+3. Sauvegarder et tester
+
+Exemple :
+```javascript
+$w.onReady(function () {
+    // Votre code ici
+    $w("#monBouton").onClick(() => {
+        console.log("Bouton cliqué !");
+    });
+});
+```
+
+---
+
+## 🐛 Débogage
+
+### Console du navigateur
+
+Utilisez la console pour déboguer (F12) :
+```javascript
+console.log("Debug:", maVariable);
+```
+
+### Problèmes fréquents
+
+| Problème | Solution |
+|----------|----------|
+| `npm: command not found` | Installer Node.js |
+| `wix: command not found` | Installer Wix CLI : `npm install -g @wix/cli` |
+| Élément non trouvé | Vérifier que l'ID correspond dans l'éditeur Wix |
+| Hot-reload ne fonctionne pas | Relancer `wix dev` |
+
+---
+
+## 📚 Ressources et documentation
+
+- [Documentation Velo by Wix](https://dev.wix.com/docs)
+- [API Reference Wix](https://www.wix.com/velo/reference/api-overview)
+- [Wix CLI Documentation](https://dev.wix.com/docs/build-apps/developer-tools/cli/get-started)
+- [Forum Wix](https://www.wix.com/velo/forum)
+
+---
+
+## 👥 Contribution
+
+Ce projet est développé dans le cadre d'une mission professionnelle. Les contributions externes ne sont pas acceptées pour le moment.
+
+---
+
+## 📄 Licence
+
+Ce projet est la propriété du centre de formation. Tous droits réservés.
+
+---
+
+## 📞 Contact
+
+Pour toute question concernant ce projet :
+
+- **GitHub** : [@Adjasaba](https://github.com/Adjasaba)
+- **Projet** : Refonte site CFA
+
+---
+
+## 🎯 Roadmap
+
+### Phase 1 - Fondations ✅
+- [x] Configuration de l'environnement de développement
+- [x] Structure du projet
+- [x] Design et navigation de base
+
+### Phase 2 - Fonctionnalités ⏳
+- [x] Bouton "Retour en haut" avec animation
+- [ ] Intégration réseaux sociaux
+- [ ] Formulaires de contact
+- [ ] Système de recherche
+
+### Phase 3 - Optimisation 📋
+- [ ] Tests utilisateurs
+- [ ] Optimisation des performances
+- [ ] SEO et accessibilité
+- [ ] Documentation complète
+
+### Phase 4 - Déploiement 🚀
+- [ ] Tests finaux
+- [ ] Formation du client
+- [ ] Mise en production
+- [ ] Monitoring
+
+---
+
+## 🙏 Remerciements
+
+Merci au centre de formation pour la confiance accordée et l'opportunité de réaliser ce projet.
+
+---
+
+<p align="center">
+  <strong>Développé dans le cadre d'une expérience professionnelle</strong>
+</p>
+
+<p align="center">
+  <sub>Projet de refonte site web • 2025</sub>
+</p>
