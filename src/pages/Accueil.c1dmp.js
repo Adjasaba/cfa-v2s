@@ -1,5 +1,5 @@
 $w.onReady(function() {
-    console.log("Le code démarre !");
+    console.log("Le code démarre ");// test pour vérifier que le code se lance
     
     function animerCompteur(elementID, debut, fin, duree, avecPourcent) {
         let momentDepart = Date.now();
@@ -31,7 +31,7 @@ $w.onReady(function() {
     }
     
     function demarrerAnimations() {
-        console.log("🚀 Les animations démarrent !");
+        console.log("les compteurs se lancent ");
         
         animerCompteur("#counter1", 0, 400, 3000, false);
         
@@ -49,14 +49,14 @@ $w.onReady(function() {
     }
     
     // Détecter CHAQUE FOIS que la section devient visible
-    $w("#statsSection").onViewportEnter(() => {
-        console.log("📍 Section visible - Animation lancée !");
+    $w("#statssection").onViewportEnter(() => {
+        console.log("Section visible: l'animation se lance ");
         demarrerAnimations(); // Pas de vérification, on relance à chaque fois
     });
     
-    // BONUS : Réinitialiser quand on quitte la section
-    $w("#statsSection").onViewportLeave(() => {
-        console.log("👋 Section quittée - Réinitialisation");
+    // le compteur se réinitialise à chaque fois qu'il est scrollé
+    $w("#statssection").onViewportLeave(() => {
+        console.log(" Section scrollée - le compteur se réinitialise");
         $w("#counter1").text = "0";
         $w("#counter2").text = "0%";
         $w("#counter3").text = "0%";
