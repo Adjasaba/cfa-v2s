@@ -62,4 +62,37 @@ $w.onReady(function() {
         $w("#counter3").text = "0%";
         $w("#counter4").text = "0%";
     });
+         // INIT
+        $w("#mobileOverlay1").hide();
+        $w("#mobileOverlay2").hide();
+        $w("#mobileOverlay3").hide();
+        
+
+
+    $w("#mobileImage1").onClick(() => {
+    console.log("clic sur img1");
+    $w("#mobileOverlay1").show();
+    // Masquer les autres overlays
+    $w("#mobileOverlay2").hide();
+    $w("#mobileOverlay3").hide();
+});
+
+// 2. Clic sur image2
+$w("#mobileImage2").onClick(() => {
+    console.log("clic sur img2");
+    $w("#mobileOverlay2").show();
+    $w("#mobileOverlay1").hide();
+    $w("#mobileOverlay3").hide();
+});
+
+// 3. Clic sur image3
+$w("#mobileImage3").onClick(() => {
+    console.log("clic sur img3");
+    $w("#mobileOverlay3").show();
+    $w("#mobileOverlay1").hide();
+    $w("#mobileOverlay2").hide();
+});
+   
+ 
+  });
 });
