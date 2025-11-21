@@ -42,45 +42,6 @@ Ce projet consiste en la **refonte complète du site web** d'un centre de format
 
 ---
 
-## 🚀 Installation et configuration
-
-### Prérequis
-
-Avant de commencer, assurez-vous d'avoir installé :
-- [Node.js](https://nodejs.org/) (version 18 ou supérieure)
-- [Git](https://git-scm.com/)
-- Un compte [Wix](https://www.wix.com)
-
-### Installation
-
-1. **Cloner le dépôt**
-```bash
-git clone https://github.com/Adjasaba/cfa-v2s.git
-cd cfa-v2s
-```
-
-2. **Installer les dépendances**
-```bash
-npm install
-```
-
-3. **Installer Wix CLI (si pas déjà fait)**
-```bash
-npm install -g @wix/cli
-```
-
-4. **Se connecter à Wix**
-```bash
-wix login
-```
-
-5. **Lancer l'environnement de développement local**
-```bash
-wix dev
-```
-
-Le site sera accessible sur `http://localhost:5173` (ou un autre port indiqué dans le terminal).
-
 ---
 
 ## 📂 Structure du projet
